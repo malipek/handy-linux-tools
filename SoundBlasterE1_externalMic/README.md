@@ -22,7 +22,7 @@ switching shared port to external microphone input
 sudo enableEMic.sh
 ```
 #
-switching shared port back to headphones ouput
+switching shared port back to headphones output
 
 ```shell
 sudo disableEMic.sh
