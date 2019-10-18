@@ -1,5 +1,5 @@
 #!/bin/bash
-path=/dev/$(dmesg | grep Creative | egrep -o "hidraw[0-9]{1,}")
+path=/dev/$(dmesg | grep Creative | tail -1 | egrep -o "hidraw[0-9]{1,}")
 if  [ "$path" == "/dev/" ] ; then
 	echo "No hidraw device found" >&2
 	exit 1
